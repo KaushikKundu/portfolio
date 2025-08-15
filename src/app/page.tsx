@@ -1,11 +1,11 @@
+
 import Image from "next/image";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import { RiNextjsFill, RiNodejsFill, RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiDocker, SiExpress, SiPostgresql, SiRedis, SiTypescript } from "react-icons/si";
-import { HomeIcon, icons } from "lucide-react";
-import { DiDocker, DiGithubBadge, DiPostgresql } from "react-icons/di";
-import { GiHut, GiHutsVillage } from "react-icons/gi";
+import { DiGithubBadge } from "react-icons/di";
+
 export default function Home() {
   const skills = [
     {

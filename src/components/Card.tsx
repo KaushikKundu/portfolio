@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Link from 'next/link';
 import Button from '@/components/Button';
 import { Star } from 'lucide-react';
@@ -12,7 +10,7 @@ interface cardProps {
         href: string,
         live?: string,
     }[];
-    skillsArray: Array<String>,
+    skillsArray: Array<string>,
 }
 export default function Card({ name, description, links, skillsArray }: cardProps) {
     return (
