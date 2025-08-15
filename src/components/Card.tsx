@@ -10,13 +10,13 @@ interface cardProps {
     description: string;
     links: {
         href: string,
-        label: string,
+        live?: string,
     }[];
     skillsArray: Array<String>,
 }
 export default function Card({ name, description, links, skillsArray }: cardProps) {
     return (
-        <div className='border border-gray-300 shadow-md rounded-lg p-4 bg-linear-to-r from-neutral-100 to-yellow-100  hover:shadow-lg transition-shadow my-4 duration-300 cursor-pointer'>
+        <div className='border border-gray-300 shadow-lg rounded-lg p-4 bg-linear-to-r from-neutral-100 to-yellow-100  hover:shadow-2xl transition-shadow my-4 duration-300 cursor-pointer'>
             <div className='flex items-center justify-between'>
                 <h2 className='text-xl font-semibold mb-2'>{name}</h2>
                 <div>
