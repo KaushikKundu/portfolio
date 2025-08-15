@@ -1,24 +1,39 @@
-
+import Image from "next/image";
+import Button from "@/components/Button";
 export default function Home() {
+  const skills = ["JavaScript", "React", "Node.js", "CSS", "HTML"];
   return (
-    <main className="flex min-h-screen items-center justify-center bg-black p-8">
-      <section className="flex flex-col md:flex-row items-center gap-12 rounded-3xl p-10 max-w-4xl w-full border border-gray-800 bg-neutral-900 shadow-lg">
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4 drop-shadow-lg">
-            Hi, I'm Kaushik
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-6">
-            A Full Stack Engineer & backend enthusiast. I love diving deep into backend systems and binge-watching web series. Welcome to my portfolio!
-          </p>
+    <main className="max-w-3xl mx-auto min-h-screen p-8 flex flex-col gap-y-8">
+      <section className="flex items-center justify-between space-x-4 my-8">
+        <div className="flex flex-col gap-y-1.5">
+          <h1 className="font-extrabold text-5xl tracking-tight">Kaushik</h1>
+          <p className="text-xl text-neutral-500 ">Full stack engineer. I love building things and helping people. Very active on Twitter.</p>
         </div>
-        <div className="flex-shrink-0 w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-gray-700 bg-black">
-          <img
-            src="/vercel.svg"
-            alt="Profile picture"
-            className="object-cover w-full h-full"
-          />
+        <div >
+          <Image src="/profilepic.jpeg" width={200} height={200} alt="logo" className="border border-black rounded-full" />
         </div>
       </section>
+      <section className="flex flex-col gap-y-2">
+        <h1 className="font-black text-xl tracking-tight">About</h1>
+        <p className="text-neutral-600 tracking-wide ">Build businesses all around the world making 10M dollars in portfolio. I love writing and designing. Ceo of Meta. Interned at vercel, and lot others cool compaies. Love travelling, japan, kdrama. introvert pro max.</p>
+      </section>
+      <section>
+         <h1 className="font-black text-xl tracking-tight">Skills</h1>
+         <div className="flex flex-wrap gap-2 mt-2">
+          {skills.map((skill, index)=> (
+            <Button key={index}>{skill}</Button>
+          ))}
+         </div>
+      </section>
+      <section>
+        <h1 className="font-black text-xl tracking-tight">Projects</h1>
+        <div className="flex flex-col gap-y-2">
+          <p className="text-neutral-600 tracking-wide">Check out my projects on GitHub.</p>
+        </div>
+      </section>
+      <footer>
+        <p className="text-center text-neutral-500 text-sm mt-8">© 2025 Kaushik. All rights reserved.</p>
+      </footer>
     </main>
   );
 }
