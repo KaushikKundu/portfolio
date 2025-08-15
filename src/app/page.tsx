@@ -1,7 +1,29 @@
 import Image from "next/image";
 import Button from "@/components/Button";
+import Card from "@/components/Card";
 export default function Home() {
   const skills = ["JavaScript", "React", "Node.js", "CSS", "HTML"];
+  const projects = [
+    {
+      name: "draw-ease",
+      image: "/draw-ease.png",
+      description: "A drawing app that allows you to draw and share your drawings with others.",
+      links: [{
+        href: "https://github.com/KaushikKundu/draw-ease",
+        label: "GitHub"
+      }]
+    },
+    {
+      name: "chat-server",
+      image: "/draw-ease.png",
+      description: "A real-time chat server built with Node.js and websockets.",
+      links: [{
+        href: "https://github.com/KaushikKundu/draw-ease",
+        label: "GitHub"
+      }]
+    },
+
+  ]
   return (
     <main className="max-w-3xl mx-auto min-h-screen p-8 flex flex-col gap-y-8">
       <section className="flex items-center justify-between space-x-4 my-8">
@@ -29,6 +51,20 @@ export default function Home() {
         <h1 className="font-black text-xl tracking-tight">Projects</h1>
         <div className="flex flex-col gap-y-2">
           <p className="text-neutral-600 tracking-wide">Check out my projects on GitHub.</p>
+        </div>
+        <div>
+          {
+            projects.map((project,index) => (
+              <Card 
+              key={index}
+              name={project.name}
+              image={project.image}
+              description={project.description}
+              links={project.links}
+              skillsArray={["JavaScript", "React", "Node.js"]} 
+              />
+            ))
+          }
         </div>
       </section>
       <footer>
