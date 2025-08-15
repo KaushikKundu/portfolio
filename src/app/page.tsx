@@ -75,7 +75,7 @@ export default function Home() {
     <main className="max-w-3xl mx-auto min-h-screen p-8 flex flex-col gap-y-8">
       <section className="flex items-center justify-between space-x-4 my-8">
         <div className="flex flex-col gap-y-1.5">
-          <h1 className="font-extrabold text-5xl tracking-tight">Hi, I&aposm Kaushik</h1>
+          <h1 className="font-extrabold text-5xl tracking-tight">Hi, I&apos;m Kaushik</h1>
           <p className="text-xl text-neutral-500 ">Full stack engineer. I love building things and learning. Very active on Twitter.</p>
           <button className="bg-yellow-300 w-fit py-1 px-2 rounded-lg font-mono">Available for hire</button>
         </div>
@@ -85,7 +85,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col gap-y-2">
         <h1 className="font-black text-xl tracking-tight">About </h1>
-        <p className="text-neutral-600 tracking-wide ">I&aposm Kaushik. A cs grad, based out of Kolkata, India, primarily working with full stack technologies and diving deep into core backend systems. I love reading blogs, people&aposs experiences. This is a small place of mine on the internet. Will share lot of thoughts through blogs, and documenting my life on X.Open to freelance work or if u need any help, hit me up at <strong className="font-mono hover:underline">kaushikkundu774@gmail.com</strong> </p>
+        <p className="text-neutral-600 tracking-wide ">I&apos;m Kaushik. A cs grad, based out of Kolkata, India, primarily working with full stack technologies and diving deep into core backend systems. I love reading blogs, people&apos;s experiences. This is a small place of mine on the internet. Will share lot of thoughts through blogs, and documenting my life on X.Open to freelance work or if u need any help, hit me up at <strong className="font-mono hover:underline">kaushikkundu774@gmail.com</strong> </p>
       </section>
       <section>
          <h1 className="font-black text-xl tracking-tight">Skills</h1>
